@@ -1,0 +1,22 @@
+openapi: "3.0.3"
+info:
+  title: "Utility-IDC API"
+  version: "1.0"
+servers:
+  - url: http://localhost:8000/api
+    description: "Local Server For Test API"
+  - url: http://10.129.29.200/api
+    description: "Main GT Server"
+paths:
+  /assets:
+    get:
+      tags:
+        - Asset
+      responses:
+        "200":
+          description: OK
+  /test:
+    get:
+      responses:
+        "200":
+          description: OK
